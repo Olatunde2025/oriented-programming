@@ -114,5 +114,43 @@ def return_book(member_id, isbn):
                 return
     print("Member not found.")
 
+    # demo.py
+
+from Info import *
+
+print("\n=== MINI LIBRARY MANAGEMENT SYSTEM Commands ===\n")
+
+# 1. Add a few books
+add_book("002", "Harry Potter and the Goblet of Fire", "J.K. Rowling", "Fantasy", 5)
+add_book("004", "Of Mice and Men", "John Steinbeck", "Fiction", 4)
+
+# 2. Add members
+add_member(2, "Ola", "ola@email.com")
+add_member(3, "John", "john@email.com")
+
+# 3. Search for books
+print("\n-- Searching for 'Harry' --")
+search_book("Harry")
+
+# 4. Borrowing books
+print("\n-- Borrowing Books --")
+borrow_book(2, "002")   # 1984
+borrow_book(2, "004")   # Harry Potter
+
+# 5. Returning books
+print("\n-- Returning a Book --")
+return_book(2, "002")
+
+# 6. Updating a book
+print("\n-- Updating Book Copies --")
+update_book("004", new_total=6)
+
+# 7. Delete a book (only if all copies available)
+print("\n-- Deleting Book --")
+delete_book("002")
+
+print("\n=== Commands COMPLETE ===\n")
+
+
    #UML Diagram
    ![image alt](https://github.com/Olatunde2025/oriented-programming/blob/main/UML%20Diagram%20-%20Library%20System.png)
