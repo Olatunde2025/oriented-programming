@@ -114,4 +114,5 @@ def return_book(member_id, isbn):
                 return
     print("Member not found.")
 
-    ![image alt]()
+   #UML Diagram
+   ![image alt](https://github.com/Olatunde2025/oriented-programming/blob/main/UML%20Diagram%20-%20Library%20System.png)
